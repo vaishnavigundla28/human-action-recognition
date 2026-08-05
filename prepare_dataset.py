@@ -31,7 +31,6 @@ print("y_data shape:", y_data.shape)  # Should match total_samples
 
 #combines all action data
 
-#cell 24
 import numpy as np
 import os
 
@@ -60,8 +59,6 @@ print("Shape of y_data:", y_data.shape)  # Should be (num_samples,)
 
 #reshapes the data for the LSTM
 
-#cell 25
-# Reshape for LSTM (add a time-step dimension)
 X_data = X_data.reshape((X_data.shape[0], 1, X_data.shape[1]))
 
 # Print the new shape
