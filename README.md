@@ -34,15 +34,13 @@ The model is trained to recognize the following actions:
 
 ```text
 human-action-recognition-mediapipe-lstm/
-│
-├── data/                         # Recorded pose sequences
-├── pose_data/                    # Processed dataset (X.npy, y.npy)
+│                       
+├── pose_data/                    # Processed dataset (X.npy, y.npy,Recorded pose sequence)
 ├── models/                       # Trained LSTM model
 ├── collect_data.py               # Data collection script
 ├── prepare_dataset.py            # Dataset preparation
 ├── train_model.py                # Model training
-├── predict_webcam.py             # Real-time prediction
-├── utils.py                      # Utility functions
+├── predict_webcam.py             # Real-time prediction                    
 ├── requirements.txt              # Project dependencies
 └── README.md                     # Project documentation
 ```
