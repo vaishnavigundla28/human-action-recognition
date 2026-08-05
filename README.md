@@ -35,16 +35,16 @@ The model is trained to recognize the following actions:
 ```text
 human-action-recognition-mediapipe-lstm/
 │                       
-├── pose_data/                    # Processed dataset (X.npy, y.npy,Recorded pose sequence)
-├── models/                       # Trained LSTM model
 ├── collect_data.py               # Data collection script
 ├── prepare_dataset.py            # Dataset preparation
 ├── train_model.py                # Model training
-├── predict_webcam.py             # Real-time prediction                    
+├── predict_webcam.py             # Real-time prediction
+├── pose_data/                    # Processed dataset (X.npy, y.npy,Recorded pose sequence)
+├── models/                       # Trained LSTM model                  
 ├── requirements.txt              # Project dependencies
 └── README.md                     # Project documentation
 ```
-
+“The trained model (human_action_recognition_model.keras) and dataset files (X.npy, y.npy) are generated locally by running prepare_dataset.py and train_model.py.”
 ## Workflow
 
 1. **Data Collection**
@@ -102,8 +102,7 @@ python predict_webcam.py
 
 ## Model
 
-The project uses a **Long Short-Term Memory (LSTM)** neural network to learn temporal patterns in body pose sequences. MediaPipe Pose provides 3D body landmark coordinates, which are used as input features for action classification.
-
+The project uses a **Long Short-Term Memory (LSTM)** neural network to learn temporal patterns in body pose sequences. MediaPipe Pose provides body landmark coordinates, which are used as input features for action classification.
 ## Future Enhancements
 
 * Support for additional human activities
